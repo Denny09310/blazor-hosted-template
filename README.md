@@ -134,7 +134,7 @@ dotnet new --install ./bin/Release/Denny09310.AspNetCore.Blazor.Templates.1.0.0.
 **Denny09310**
 📧 [k.denny2000@gmail.com](mailto:k.denny2000@gmail.com)
 🗓️ Version: 1.0.0
-🏷️ Identity: `dev.kojadennis.blazorwasm-hosted`
+🏷️ Identity: `dev.denny09310.blazorwasm-hosted`
 
 ---
 
