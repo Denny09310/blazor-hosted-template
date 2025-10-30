@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Denny09310",
+    "classifications": [
+        "Web",
+        "Blazor",
+        "WebAPI"
+    ],
+    "identity": "dev.denny09310.blazorwasm-hosted",
+    "name": "Blazor WebAssembly Standalone (Hosted)",
+    "shortName": "blazorwasm-hosted",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "blazor-hosted-template",
+    "preferNameDirectory": true,
+    "symbols": {
+        "framework": {
+            "type": "parameter",
+            "datatype": "choice",
+            "description": "Target framework for Client and Server projects.",
+            "defaultValue": "net9.0",
+            "choices": [
+                {
+                    "choice": "net8.0",
+                    "description": ".NET 8 (LTS)"
+                },
+                {
+                    "choice": "net9.0",
+                    "description": ".NET 9"
+                },
+                {
+                    "choice": "net10.0",
+                    "description": ".NET 10 (preview)"
+                }
+            ],
+            "replaces": "__TFM__"
+        },
+        "format": {
+            "type": "parameter",
+            "datatype": "choice",
+            "description": "Solution file type to create.",
+            "defaultValue": "sln",
+            "choices": [
+                {
+                    "choice": "sln",
+                    "description": "Classic solution (.sln)"
+                },
+                {
+                    "choice": "slnx",
+                    "description": "Accelerated solution (.slnx)"
+                }
+            ]
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(format == \"sln\")",
+                    "exclude": [
+                        "**/*.slnx"
+                    ]
+                },
+                {
+                    "condition": "(format == \"slnx\")",
+                    "exclude": [
+                        "**/*.sln"
+                    ]
+                }
+            ]
+        }
+    ],
+    "primaryOutputs": [
+        {
+            "path": "Client/Client.csproj"
+        },
+        {
+            "path": "Server/Server.csproj"
+        }
+    ],
+    "postActions": [
+        {
+            "id": "restore",
+            "description": "Restore NuGet packages required by this solution.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore' to install dependencies."
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}
