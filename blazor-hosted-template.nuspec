@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Denny09310.AspNetCore.Blazor.Templates</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Denny09310</authors>
     <owners>Denny09310</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
