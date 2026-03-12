@@ -1,7 +1,7 @@
 ﻿@*#if(framework == "net10.0")*@
-<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages._404)">
+<Router AppAssembly="@typeof(App).Assembly" DefaultLayout="typeof(_Layout)" NotFoundPage="typeof(Pages._404)">
 @*#else*@
-<Router AppAssembly="@typeof(App).Assembly">
+<RouteView RouteData="@routeData" DefaultLayout="typeof(_Layout)" />
 @*#endif*@
     <Found Context="routeData">
         <RouteView RouteData="@routeData" />
