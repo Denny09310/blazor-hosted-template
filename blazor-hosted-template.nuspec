@@ -19,6 +19,7 @@
   </metadata>
 
   <files>
-    <file src="**\*" target="content" />
+    <file src="src\**\*" target="content" />
+    <file src="README.md" target="content\README.md" />
   </files>
 </package>
