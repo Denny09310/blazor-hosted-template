@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Dennis.AspNetCore.Blazor.Templates</id>
+    <id>Denny09310.AspNetCore.Blazor.Templates</id>
     <version>1.0.0</version>
     <authors>Denny09310</authors>
     <owners>Denny09310</owners>
@@ -10,7 +10,7 @@
     <license type="expression">MIT</license>
     <readme>content/README.md</readme>
     <icon>content/.template.config/images/icon.png</icon>
-    <projectUrl>https://github.com/kojadennis/BlazorHostedTemplate</projectUrl>
+    <projectUrl>https://github.com/Denny09310/blazor-hosted-template.git</projectUrl>
     <tags>blazor webapi webassembly template dotnet</tags>
 
     <packageTypes>
