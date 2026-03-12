@@ -68,6 +68,12 @@
                     "exclude": [
                         "**/*.sln"
                     ]
+                },
+                {
+                    "condition": "(framework == \"net9.0\")",
+                    "exclude": [
+                        "Client/Components/Pages/_404.razor"
+                    ]
                 }
             ]
         }

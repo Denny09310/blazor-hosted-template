@@ -1,4 +1,9 @@
-﻿<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages._404)">
+﻿@*#if(framework == "net10.0")*@
+<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages._404)">
+@*#endif*@
+@*#if(framework == "net9.0")*@
+<Router AppAssembly="@typeof(App).Assembly">
+@*#endif*@
     <Found Context="routeData">
         <RouteView RouteData="@routeData" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
