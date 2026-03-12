@@ -45,16 +45,16 @@ Run one of the following commands:
 
 ```bash
 # Default (uses .NET 9 and classic .sln)
-dotnet new blazorwasm-hosted -n MyApp
+dotnet new blazor-hosted -n MyApp
 
 # Use .NET 8 (LTS)
-dotnet new blazorwasm-hosted -n MyApp -p framework=net8.0
+dotnet new blazor-hosted -n MyApp -p framework=net8.0
 
 # Use .NET 10 (preview)
-dotnet new blazorwasm-hosted -n MyApp -p framework=net10.0
+dotnet new blazor-hosted -n MyApp -p framework=net10.0
 
 # Use accelerated .slnx format
-dotnet new blazorwasm-hosted -n MyApp -p format=slnx
+dotnet new blazor-hosted -n MyApp -p format=slnx
 ```
 
 ---
@@ -134,7 +134,7 @@ dotnet new --install ./bin/Release/Denny09310.AspNetCore.Blazor.Templates.1.0.0.
 **Denny09310**
 📧 [k.denny2000@gmail.com](mailto:k.denny2000@gmail.com)
 🗓️ Version: 1.0.0
-🏷️ Identity: `dev.denny09310.blazorwasm-hosted`
+🏷️ Identity: `dev.denny09310.blazor-hosted`
 
 ---
 
