@@ -6,9 +6,9 @@
         "Blazor",
         "WebAPI"
     ],
-    "identity": "dev.denny09310.blazorwasm-hosted",
+    "identity": "dev.denny09310.blazor-hosted",
     "name": "Blazor WebAssembly Standalone (Hosted)",
-    "shortName": "blazorwasm-hosted",
+    "shortName": "blazor-hosted",
     "tags": {
         "language": "C#",
         "type": "project"
@@ -32,7 +32,7 @@
                 },
                 {
                     "choice": "net10.0",
-                    "description": ".NET 10 (preview)"
+                    "description": ".NET 10 (LTS)"
                 }
             ],
             "replaces": "__TFM__"
@@ -52,6 +52,22 @@
                     "description": "Accelerated solution (.slnx)"
                 }
             ]
+        },
+        "httpPort": {
+            "type": "generated",
+            "generator": "port",
+            "parameters": {
+                "low": 5000,
+                "high": 5300
+            }
+        },
+        "httpsPort": {
+            "type": "generated",
+            "generator": "port",
+            "parameters": {
+                "low": 7000,
+                "high": 7300
+            }
         }
     },
     "sources": [
