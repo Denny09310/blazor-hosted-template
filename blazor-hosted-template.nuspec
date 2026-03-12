@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Dennis.AspNetCore.Blazor.Templates</id>
+    <version>1.0.0</version>
+    <authors>Denny09310</authors>
+    <owners>Denny09310</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Denny09310's personal blazor templates</description>
+    <license type="expression">MIT</license>
+    <readme>content/README.md</readme>
+    <icon>content/.template.config/images/icon.png</icon>
+    <projectUrl>https://github.com/kojadennis/BlazorHostedTemplate</projectUrl>
+    <tags>blazor webapi webassembly template dotnet</tags>
+
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+
+  <files>
+    <file src="**\*" target="content" />
+  </files>
+</package>
