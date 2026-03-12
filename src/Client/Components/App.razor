@@ -1,7 +1,6 @@
 ﻿@*#if(framework == "net10.0")*@
 <Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages._404)">
-@*#endif*@
-@*#if(framework == "net9.0")*@
+@*#else*@
 <Router AppAssembly="@typeof(App).Assembly">
 @*#endif*@
     <Found Context="routeData">

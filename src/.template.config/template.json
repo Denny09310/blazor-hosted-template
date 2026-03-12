@@ -59,7 +59,8 @@
             "parameters": {
                 "low": 5000,
                 "high": 5300
-            }
+            },
+            "replaces": "__HTTP_PORT__"
         },
         "httpsPort": {
             "type": "generated",
@@ -67,7 +68,8 @@
             "parameters": {
                 "low": 7000,
                 "high": 7300
-            }
+            },
+            "replaces": "__HTTPS_PORT__"
         }
     },
     "sources": [
