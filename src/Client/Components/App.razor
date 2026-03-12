@@ -1,10 +1,10 @@
 ﻿@*#if(framework == "net10.0")*@
 <Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages._404)">
 @*#else*@
-<Router AppAssembly="@typeof(App).Assembly">
+<Router AppAssembly="@typeof(App).Assembly" />
 @*#endif*@
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" />
+        <RouteView RouteData="@routeData" DefaultLayout="typeof(_Layout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
 </Router>

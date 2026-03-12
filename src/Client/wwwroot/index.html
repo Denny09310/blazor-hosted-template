@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client</title>
     <base href="/" />
+    <!--#if (framework == "net10.0")-->
     <link rel="preload" id="webassembly" />
+    <!--#endif-->
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="Client.styles.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <!--#if (framework == "net10.0")-->
     <script type="importmap"></script>
+    <!--#endif-->
 </head>
 
 <body>
